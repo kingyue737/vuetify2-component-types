@@ -2,15 +2,19 @@
   "name": "@kingyue/vuetify2-component-types",
   "version": "2.7.0",
   "description": "Component types for Volar intellisense with Vuetify 2 and Vue 2.7",
+  "keywords": [
+    "vuetify",
+    "typescript"
+  ],
   "type": "module",
   "types": "index.d.ts",
   "scripts": {
-    "generate": "node ./generate.js > ./index.d.ts && npx tsc --noEmit",
-    "build": "npm run generate",
-    "prepack": "npm run generate"
+    "generate": "node ./generate.js > ./index.d.ts && pnpx tsc --noEmit",
+    "build": "pnpm run generate",
+    "prepack": "pnpm run generate"
   },
-  "repository": "https://github.com/IntelliTect/vuetify2-component-types",
-  "author": "ascott18, kingyue737",
+  "repository": "https://github.com/kingyue737/vuetify2-component-types",
+  "author": "kingyue737, ascott18",
   "license": "MIT",
   "devDependencies": {
     "prettier": "^3.0.3",
